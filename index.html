@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Escolha Financeira da Sua Vida: Risco vs. Retorno | Projeto UFRJ</title>
+    <!-- Carregamento do Tailwind CSS para estilo e responsividade -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* Gray-50: Fundo mais claro e elegante */
+            padding-top: 64px; /* Espaço para a navbar fixa */
+        }
+        .section-anchor {
+            scroll-margin-top: 80px; /* Offset para a navegação fixa */
+        }
+        /* Classe customizada para iframe responsivo (16:9) */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin-top: 1rem;
+            border-radius: 0.75rem; /* Cantos levemente mais arredondados */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Definição de cores para o gráfico (Tons de Azul/Ciano) */
+        .invest-bar { background-color: #06B6D4; /* Cyan-500 (Crescimento/Sucesso) */ }
+        .aposta-bar { background-color: #312E81; /* Indigo-800 (Risco/Alto Contraste) */ }
+        /* Cores para o Gráfico de Motivações (tons de azul variados) */
+        .bar-entretenimento { background-color: #4F46E5; /* Indigo-600 */ }
+        .bar-renda { background-color: #2563EB; /* Blue-600 */ }
+        .bar-ganhos { background-color: #0EA5E9; /* Sky-500 */ }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- BARRA DE NAVEGAÇÃO FIXA -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-xl z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-4xl">
+            <span class="text-xl font-bold text-gray-900">UFRJ FACC | Guia Financeiro</span>
+            <div class="hidden md:flex space-x-6">
+                <a href="#diagnostico" class="text-gray-600 hover:text-indigo-600 transition duration-300">Diagnóstico</a>
+                <a href="#conscientizacao" class="text-gray-600 hover:text-indigo-600 transition duration-300">O Mito</a>
+                <a href="#solucao" class="text-gray-600 hover:text-indigo-600 transition duration-300">O Caminho</a>
+            </div>
+            <!-- Botão de menu para mobile (simplesmente escondido neste exemplo para focar no conteúdo) -->
+            <button class="md:hidden text-gray-600 hover:text-indigo-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HEADER: 1. HOME / INTRODUÇÃO: ENGAGEMENTO PELO FATO -->
+    <header class="bg-gray-900 text-white shadow-2xl">
+        <div class="container mx-auto p-8 md:p-12 text-center rounded-b-3xl">
+            <p class="text-sm font-semibold mb-2 uppercase tracking-widest text-indigo-400">Projeto de Extensão Universitária</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+                🎓 A Escolha Financeira da Sua Vida: Risco vs. Retorno
+            </h1>
+            <p class="text-xl sm:text-2xl font-light opacity-90 mt-4">
+                Pesquisa UFRJ/FACC transformando dados em conhecimento prático para a comunidade.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-10 md:py-16 max-w-4xl">
+
+        <!-- DESTAQUE: O CHOQUE DE REALIDADE -->
+        <section id="introducao" class="bg-white p-6 sm:p-10 rounded-2xl shadow-2xl mb-12 border-t-8 border-indigo-600">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-6">O Choque de Realidade: Por que suas escolhas importam?</h2>
+            
+            <p class="text-gray-700 text-lg mb-6">Nossa pesquisa com <strong>50</strong> participantes revelou um dado crucial: a sua <strong>educação</strong> e a de seus <strong>pais</strong> têm uma forte correlação com a forma como você decide lidar com o dinheiro – seja investindo ou arriscando em apostas.</p>
+            
+            <div class="bg-indigo-100 border-l-8 border-indigo-700 p-6 rounded-lg shadow-inner">
+                <p class="text-xl font-bold text-indigo-900 flex items-center">
+                    <svg class="w-6 h-6 mr-3 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    Destaque do Estudo: Correlação Direta
+                </p>
+                <p class="mt-2 text-indigo-800">
+                    Descobrimos que <strong>86%</strong> dos indivíduos que fazem apostas não possuem Ensino Superior completo. O objetivo deste guia, baseado em dados, é fornecer as ferramentas para <strong>mudar essa estatística</strong> e oferecer oportunidades reais de planejamento financeiro.
+                </p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 1: O DIAGNÓSTICO (RESULTS DA PESQUISA) -->
+        <section id="diagnostico" class="section-anchor mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 pb-3 border-b-4 border-gray-200 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                1. O Fato: O Efeito da Escolaridade
+            </h2>
+            
+            <p class="text-gray-700 mb-8">Os gráficos a seguir são o coração do nosso diagnóstico. Eles demonstram que as escolhas financeiras são, em grande parte, um reflexo do acesso à informação e à educação básica recebida, influenciando diretamente a propensão ao risco.</p>
+
+            <!-- GRÁFICO 1: ESCOLARIDADE DOS PAIS VS HÁBITO -->
+            <div class="bg-white p-6 rounded-xl shadow-xl mb-6 transform hover:scale-[1.01] transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Gráfico 1: Escolaridade dos Pais vs. Hábito Financeiro dos Filhos</h3>
+                
+                <div class="flex items-center justify-center space-x-6 mb-4 text-sm font-semibold">
+                    <div class="flex items-center">
+                        <span class="w-3 h-3 invest-bar rounded-full mr-2"></span>
+                        <span>Filhos que Investem (Risco Baixo)</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-3 h-3 aposta-bar rounded-full mr-2"></span>
+                        <span>Filhos que Apostam (Risco Alto)</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Barra 1: Pais com Baixa/Média Escolaridade (Até Ensino Médio Completo) -->
+                    <div>
+                        <p class="text-sm font-medium mb-1 text-gray-700">Pais com Baixa/Média Escolaridade</p>
+                        <div class="flex h-8 rounded-lg overflow-hidden border border-gray-300">
+                            <!-- Investem: 48% -->
+                            <div style="width: 48%;" class="invest-bar flex items-center justify-end pr-2 text-white font-bold text-xs">48%</div>
+                            <!-- Apostam: 42% -->
+                            <div style="width: 42%;" class="aposta-bar flex items-center justify-start pl-2 text-white font-bold text-xs">42%</div>
+                            <!-- Outros/Não se aplica: 10% -->
+                            <div style="width: 10%;" class="bg-gray-200 flex items-center justify-center text-gray-600 text-xs">10%</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Barra 2: Pais com Alta Escolaridade (Superior Incompleto ou Mais) -->
+                    <div>
+                        <p class="text-sm font-medium mb-1 text-gray-700">Pais com Alta Escolaridade</p>
+                        <div class="flex h-8 rounded-lg overflow-hidden border border-gray-300">
+                            <!-- Investem: 64% -->
+                            <div style="width: 64%;" class="invest-bar flex items-center justify-end pr-2 text-white font-bold text-xs">64%</div>
+                            <!-- Apostam: 20% -->
+                            <div style="width: 20%;" class="aposta-bar flex items-center justify-start pl-2 text-white font-bold text-xs">20%</div>
+                            <!-- Outros/Não se aplica: 16% -->
+                            <div style="width: 16%;" class="bg-gray-200 flex items-center justify-center text-gray-600 text-xs">16%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mt-4 text-sm text-gray-600">💡 *Análise:* Filhos de pais com <strong>Alta Escolaridade</strong> têm uma propensão <strong>16 pontos percentuais maior</strong> a investir (64% vs 48%) e <strong>mais que o dobro de propensão menor</strong> a apostar (20% vs 42%). O ciclo educacional é a base da segurança financeira.</p>
+            </div>
+
+            <!-- GRÁFICO 2: ESCOLARIDADE PRÓPRIA VS HÁBITO (NOVO/ANTERIOR) -->
+            <div class="bg-white p-6 rounded-xl shadow-xl mb-6 transform hover:scale-[1.01] transition duration-300">
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Gráfico 2: Escolaridade Própria vs. Hábito Financeiro</h3>
+                
+                <div class="flex items-center justify-center space-x-6 mb-4 text-sm font-semibold">
+                    <div class="flex items-center">
+                        <span class="w-3 h-3 invest-bar rounded-full mr-2"></span>
+                        <span>Público que Investe (Risco Baixo)</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-3 h-3 aposta-bar rounded-full mr-2"></span>
+                        <span>Público que Aposta (Risco Alto)</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Barra 1: Baixa/Média Escolaridade (Até Ensino Médio Completo) -->
+                    <div>
+                        <p class="text-sm font-medium mb-1 text-gray-700">Público com Baixa/Média Escolaridade</p>
+                        <div class="flex h-8 rounded-lg overflow-hidden border border-gray-300">
+                            <!-- Investem: 28% -->
+                            <div style="width: 28%;" class="invest-bar flex items-center justify-end pr-2 text-white font-bold text-xs">28%</div>
+                            <!-- Apostam: 58% -->
+                            <div style="width: 58%;" class="aposta-bar flex items-center justify-start pl-2 text-white font-bold text-xs">58%</div>
+                            <!-- Outros/Não se aplica: 14% -->
+                            <div style="width: 14%;" class="bg-gray-200 flex items-center justify-center text-gray-600 text-xs">14%</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Barra 2: Alta Escolaridade (Superior Incompleto ou Mais) -->
+                    <div>
+                        <p class="text-sm font-medium mb-1 text-gray-700">Público com Alta Escolaridade</p>
+                        <div class="flex h-8 rounded-lg overflow-hidden border border-gray-300">
+                            <!-- Investem: 72% -->
+                            <div style="width: 72%;" class="invest-bar flex items-center justify-end pr-2 text-white font-bold text-xs">72%</div>
+                            <!-- Apostam: 14% -->
+                            <div style="width: 14%;" class="aposta-bar flex items-center justify-start pl-2 text-white font-bold text-xs">14%</div>
+                            <!-- Outros/Não se aplica: 14% -->
+                            <div style="width: 14%;" class="bg-gray-200 flex items-center justify-center text-gray-600 text-xs">14%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mt-4 text-sm text-gray-600">💡 *Análise:* A progressão na <strong>escolaridade própria</strong> está fortemente correlacionada com uma maior adoção de hábitos de investimento (72% vs 28%) e menor propensão a apostas (14% vs 58%).</p>
+            </div>
+
+
+            <!-- GRÁFICO 3: MOTIVAÇÕES PARA APOSTAS -->
+            <div class="bg-white p-6 rounded-xl shadow-xl">
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Gráfico 3: As Motivações do Risco (Base: 14 Apostadores)</h3>
+                
+                <div class="flex items-center justify-center space-x-6 mb-4 text-sm font-semibold">
+                    <div class="flex items-center">
+                        <span class="w-3 h-3 bar-entretenimento rounded-full mr-2"></span>
+                        <span>Entretenimento (36%)</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-3 h-3 bar-renda rounded-full mr-2"></span>
+                        <span>Complementar Renda (29%)</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-3 h-3 bar-ganhos rounded-full mr-2"></span>
+                        <span>Ganhos Rápidos (21%)</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <!-- Entretenimento -->
+                    <div>
+                        <p class="text-sm font-medium text-gray-700">Entretenimento e Diversão</p>
+                        <div class="h-6 bar-entretenimento rounded-lg flex items-center pl-2 text-white font-bold" style="width: 36%;">36%</div>
+                    </div>
+                    <!-- Complementar Renda -->
+                    <div>
+                        <p class="text-sm font-medium text-gray-700">Para Complementar a Renda</p>
+                        <div class="h-6 bar-renda rounded-lg flex items-center pl-2 text-white font-bold" style="width: 29%;">29%</div>
+                    </div>
+                    <!-- Ganhos Rápidos -->
+                    <div>
+                        <p class="text-sm font-medium text-gray-700">Busca por Ganhos Rápidos</p>
+                        <div class="h-6 bar-ganhos rounded-lg flex items-center pl-2 text-white font-bold" style="width: 21%;">21%</div>
+                    </div>
+                    <!-- Outros (14%) -->
+                    <div>
+                        <p class="text-sm font-medium text-gray-700">Outras Motivações (Influência, etc.)</p>
+                        <div class="h-6 bg-gray-400 rounded-lg flex items-center pl-2 text-white font-bold" style="width: 14%;">14%</div>
+                    </div>
+                </div>
+
+                <p class="mt-4 text-sm text-gray-600">🎯 *Ação:* A maior parte das apostas é motivada por diversão ou pela necessidade de complementar a renda. Nossa solução (Passo 2) aborda a Renda Fixa como alternativa segura para gerar renda.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: CONSCIENTIZAÇÃO E DESMISTIFICAÇÃO -->
+        <section id="conscientizacao" class="section-anchor mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 pb-3 border-b-4 border-gray-200 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2v2m0-3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                2. O Mito do Dinheiro Rápido
+            </h2>
+            
+            <p class="text-gray-700 mb-6">A busca por <strong>ganhos rápidos</strong> (21% dos apostadores) e a motivação para <strong>complementar a renda</strong> (29%) são os principais motores que levam os participantes a optarem por apostas, como revelado em nossa pesquisa. É vital entender a diferença fundamental entre <em>sorte</em> e <em>planejamento</em>.</p>
+            
+            <div class="bg-indigo-100 p-6 rounded-xl shadow-lg border-l-4 border-indigo-600">
+                <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
+                    <svg class="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 17h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    A Matemática Simples: Por que é um mito?
+                </h3>
+                <p class="text-gray-700">A aposta é baseada em <em>sorte</em> e possui uma <strong>expectativa negativa</strong> (você, estatisticamente, perde mais no longo prazo). O investimento é baseado em <em>tempo</em> e <em>rentabilidade</em>, com uma <strong>expectativa positiva</strong> (o mercado, historicamente, cresce). Não confunda risco calculado com jogo de azar.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: A SOLUÇÃO PRÁTICA (CAPACITAÇÃO) -->
+        <section id="solucao" class="section-anchor mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 pb-3 border-b-4 border-gray-200 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.24A9.954 9.954 0 0012 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10a9.954 9.954 0 00-4.382-7.76"></path></svg>
+                3. O Caminho Consciente – Seu Guia de 3 Passos
+            </h2>
+            
+            <p class="text-gray-700 mb-8">Sabendo que a falta de conhecimento é a principal barreira, simplificamos a jornada em três passos práticos e seguros para você começar a investir:</p>
+
+            <!-- PASSO 1 - CIANO/TURQUESA -->
+            <div class="passo bg-cyan-50 p-6 rounded-2xl shadow-xl border-b-4 border-cyan-600 mb-6 transition duration-300 hover:shadow-2xl">
+                <h3 class="text-2xl font-bold text-cyan-700 mb-3 flex items-center">
+                    <span class="bg-cyan-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 font-mono">1</span>
+                    A Base Inegociável: Orçamento e Reserva
+                </h3>
+                
+                <!-- TEXTO MELHORADO -->
+                <p class="text-gray-700 text-lg mb-4">
+                    Antes de dar qualquer passo em direção aos investimentos, você precisa saber para onde seu dinheiro está indo. O <strong>Orçamento</strong> é o mapa que transforma gastos invisíveis em metas concretas, permitindo que você pare de apenas pagar contas e comece a construir seu futuro. 
+                    Nossa regra básica é 50% para despesas essenciais, 30% para desejos e, crucialmente, 20% para poupança/investimento. Sua primeira e principal meta é criar a <strong>Reserva de Emergência</strong> (equivalente a <strong>6 a 12 meses do seu custo de vida</strong>) – ela é a sua segurança financeira, seu investimento mais importante.
+                </p>
+                
+                <!-- INTRODUÇÃO E LINK PARA DOWNLOAD DA PLANILHA -->
+                <div class="bg-indigo-100 p-4 rounded-xl mb-6 border border-indigo-300">
+                    <h4 class="text-xl font-bold text-indigo-800 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        Sua Planilha de Orçamento Pessoal Gratuita
+                    </h4>
+                    <p class="text-gray-700 mb-4">
+                        Para te ajudar a se organizar, estamos disponibilizando uma planilha completa de orçamento pessoal mensal. Ela vai te ajudar a prever seus gastos, acompanhar o que foi real e visualizar exatamente para onde seu dinheiro está indo!
+                    </p>
+                    <!-- CAMINHO CORRIGIDO: O arquivo deve ser colocado na pasta 'files' na raiz do seu projeto. -->
+                    <a href="./files/Orçamento pessoal mensal.xlsx" download="Orçamento pessoal mensal.xlsx" class="font-bold text-white bg-indigo-600 hover:bg-indigo-700 py-2 px-4 rounded-lg transition duration-300 flex items-center justify-center shadow-lg">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Baixar Planilha de Orçamento (Arquivo Excel)
+                    </a>
+                </div>
+
+                <!-- ASSISTENTE DE ORÇAMENTO COM GEMINI -->
+                <div class="mt-6 pt-4 border-t border-cyan-300">
+                    <h4 class="text-xl font-bold text-cyan-700 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        ✨ Assistente de Orçamento (Gemini AI)
+                    </h4>
+                    <p class="text-sm text-gray-700 mb-3">
+                        Descreva uma categoria de gasto ou meta de economia (ex: "Conta de luz alta", "Quero guardar 500 reais para viajar"). A IA gerará dicas personalizadas e práticas!
+                    </p>
+                    <label class="block mb-3">
+                        <span class="text-sm font-medium text-gray-700">Categoria / Meta:</span>
+                        <input type="text" id="promptOrcamento" placeholder="Ex: Reduzir gastos com Uber" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2">
+                    </label>
+                    <button onclick="assistenteDeOrcamento()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-md flex items-center justify-center">
+                        ✨ Gerar Dicas de Economia
+                    </button>
+                    <div id="loadingOrcamento" class="hidden mt-3 text-center text-indigo-600 font-semibold">
+                        <svg class="animate-spin h-5 w-5 mr-3 inline text-indigo-500" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                        Pensando nas melhores dicas...
+                    </div>
+                    <div id="resultadoOrcamento" class="mt-3 p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-indigo-900 hidden">
+                        <!-- Resultado da IA aqui -->
+                    </div>
+                </div>
+
+                <!-- TEXTO DE INTRODUÇÃO À CALCULADORA -->
+                <div class="bg-cyan-100 p-4 rounded-xl mb-4 mt-6 pt-4 border-t border-cyan-300">
+                    <h4 class="text-xl font-bold text-cyan-700 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        O Poder dos Juros Compostos
+                    </h4>
+                    <p class="text-gray-700 mb-3">
+                        Aqui, apresentamos uma calculadora de juros compostos. Essa ferramenta demonstra como o seu dinheiro <strong>cresce de forma exponencial</strong> ao longo do tempo, diferentemente dos ganhos momentâneos das apostas. É a prova de que o <strong>tempo</strong> é o seu maior aliado nos investimentos.
+                    </p>
+                    <p class="text-gray-700 font-semibold text-sm">
+                        <strong>Experimente!</strong> Brinque com os valores. Por exemplo: Tente <strong>R$ 100 de contribuição mensal em 30 anos com 10% de taxa anual</strong>. Veja a mágica do acúmulo de juros!
+                    </p>
+                </div>
+
+                <!-- CALCULADORA DE JUROS COMPOSTOS -->
+                <div class="mt-6 pt-4 border-t border-cyan-300">
+                    <h4 class="text-xl font-bold text-cyan-700 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M16 16v-3m-3 3h.01M5 12h.01M5 17h.01M19 12h.01M19 17h.01M8 8V5a2 2 0 012-2h4a2 2 0 012 2v3m-4 8a4 4 0 100-8 4 4 0 000 8z"></path></svg>
+                        Simulador de Juros Compostos
+                    </h4>
+                    
+                    <div class="space-y-3">
+                        <label class="block">
+                            <span class="text-sm font-medium text-gray-700">Valor Inicial (R$) - <em>O quanto você começa hoje.</em></span>
+                            <input type="number" id="valorInicial" value="1000" min="0" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2">
+                        </label>
+                        <label class="block">
+                            <span class="text-sm font-medium text-gray-700">Contribuição Mensal (R$) - <em>O quanto você guarda todo mês.</em></span>
+                            <input type="number" id="contribuicaoMensal" value="100" min="0" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2">
+                        </label>
+                        <label class="block">
+                            <span class="text-sm font-medium text-gray-700">Taxa de Juros Anual (em %) - <em>Rentabilidade que você espera (use 10% para um bom parâmetro).</em></span>
+                            <input type="number" id="taxaJuros" value="10" min="0.01" step="0.01" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2">
+                        </label>
+                        <label class="block">
+                            <span class="text-sm font-medium text-gray-700">Período (Anos) - <em>Por quantos anos você irá investir.</em></span>
+                            <input type="number" id="periodoAnos" value="10" min="1" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2">
+                        </label>
+                    </div>
+
+                    <button onclick="calcularJurosCompostos()" class="mt-4 w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-md">
+                        Simular Futuro Financeiro
+                    </button>
+                    
+                    <div id="resultadoCalculadora" class="mt-4 p-4 bg-cyan-100 border border-cyan-300 rounded-lg text-cyan-900 font-semibold text-center hidden">
+                        <!-- O resultado será inserido aqui pelo JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- PASSO 2 - AZUL/SKY -->
+            <div class="passo bg-blue-50 p-6 rounded-2xl shadow-xl border-b-4 border-blue-600 mb-6 transition duration-300 hover:shadow-2xl">
+                <h3 class="text-2xl font-bold text-blue-700 mb-3 flex items-center">
+                    <span class="bg-blue-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 font-mono">2</span>
+                    Onde Colocar Meu Dinheiro? (Simples e Seguro)
+                </h3>
+                <p class="text-gray-700 mb-4">Para a Reserva de Emergência e para quem está começando, prefira investimentos com liquidez e segurança, protegidos da inflação:</p>
+                <ul class="list-disc list-inside ml-6 mt-3 text-gray-700 space-y-2">
+                    <!-- Lista de investimentos expandida para incluir siglas de Renda Fixa -->
+                    <li><strong>Tesouro Selic</strong> (o mais seguro para a Reserva de Emergência).</li>
+                    <li><strong>CDB (Certificado de Depósito Bancário)</strong> e <strong>CDI (Certificado de Depósito Interbancário)</strong>.</li>
+                    <li><strong>LCA (Letra de Crédito do Agronegócio)</strong> e <strong>LCI (Letra de Crédito Imobiliário)</strong> (geralmente isentos de IR).</li>
+                    <li><strong>CRI/CRA (Certificado de Recebíveis Imobiliários/Agronegócio)</strong> e Contas Digitais.</li>
+                </ul>
+                <p class="mt-4 text-sm italic text-gray-600">Esses são os primeiros degraus. Eles garantem que seu dinheiro trabalhe para você com segurança e previsibilidade.</p>
+
+                <!-- RECURSOS EM VÍDEO -->
+                <div class="mt-8 pt-4 border-t border-blue-300">
+                    <h4 class="text-xl font-bold text-blue-700 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.55 4.55a2 2 0 010 2.83l-4.55 4.55a2 2 0 01-2.83 0L3 17.83a2 2 0 010-2.83l4.55-4.55a2 2 0 012.83 0z"></path></svg>
+                        Recursos em Vídeo: Como começar na prática
+                    </h4>
+                    
+                    <p class="text-gray-700 mb-4">Veja tutoriais simples para dar seus primeiros passos no investimento seguro:</p>
+
+                    <!-- VÍDEO 1: GUIA DE RENDA FIXA -->
+                    <div class="mb-6">
+                        <p class="font-semibold text-gray-800 mb-2">Tutorial 1: Guia de Renda Fixa para Iniciantes (CDI, CDB, LCI, etc.)</p>
+                        <div class="video-container">
+                            <!-- Link do vídeo Guia de Renda Fixa -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LLG2RrpMwkA?rel=0" title="YouTube video player - Guia de Renda Fixa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- VÍDEO 2: TESOURO SELIC -->
+                    <div class="mb-6">
+                        <p class="font-semibold text-gray-800 mb-2">Tutorial 2: Tesouro Selic: O que é e como investir</p>
+                        <div class="video-container">
+                            <!-- Link do vídeo Tesouro Selic original -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/iQFmtW3zlmQ?rel=0" title="YouTube video player - Tesouro Selic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PASSO 3 - ÍNDIGO/ROXO (MAIOR COMPLEXIDADE) -->
+            <div class="passo bg-indigo-50 p-6 rounded-2xl shadow-xl border-b-4 border-indigo-700 mb-6 transition duration-300 hover:shadow-2xl">
+                <h3 class="text-2xl font-bold text-indigo-800 mb-3 flex items-center">
+                    <span class="bg-indigo-700 text-white rounded-full h-8 w-8 flex items-center justify-center mr-3 font-mono">3</span>
+                    Ações, FIIs e Cripto: Avançando com Consciência
+                </h3>
+                <p class="text-gray-700 mb-3">Investimentos de Renda Variável (como ações ou fundos imobiliários) têm potencial de retorno maior, mas também um risco maior. </p>
+                <p class="text-gray-700 font-semibold">Lembre-se: Investir em ações é ser sócio de uma empresa, com base em análise e planejamento, e <strong>não em sorte</strong>. Só avance para esta etapa depois de ter a sua Reserva de Emergência completa!</p>
+                
+                <!-- RECURSOS EM VÍDEO -->
+                <div class="mt-8 pt-4 border-t border-indigo-300">
+                    <h4 class="text-xl font-bold text-indigo-800 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.55 4.55a2 2 0 010 2.83l-4.55 4.55a2 2 0 01-2.83 0L3 17.83a2 2 0 010-2.83l4.55-4.55a2 2 0 012.83 0z"></path></svg>
+                        Recursos em Vídeo: Como avançar com risco controlado
+                    </h4>
+                    
+                    <p class="text-gray-700 mb-4">Veja tutoriais sobre como investir em ativos de maior risco, sempre com foco em estudo e planejamento:</p>
+
+                    <!-- VÍDEO 3 (TUTORIAL 3) -->
+                    <div class="mb-6">
+                        <p class="font-semibold text-gray-800 mb-2">Tutorial 3: Manual sobre Renda Variável (Ações e FIIs)</p>
+                        <div class="video-container">
+                            <!-- Link do vídeo Ações e FIIs -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EtRS4hoatpA?rel=0" title="YouTube video player - Renda Variável" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- VÍDEO 4 (TUTORIAL 4) -->
+                    <div class="mb-6">
+                        <p class="font-semibold text-gray-800 mb-2">Tutorial 4: Cripto e Risco: Começando a Investir</p>
+                        <div class="video-container">
+                            <!-- Link do vídeo Criptomoedas -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JdoBe9hXRTE?rel=0" title="YouTube video player - Criptomoedas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- FOOTER: ENCERRAMENTO E METODOLOGIA -->
+    <footer class="bg-gray-900 text-white p-6 md:p-8 mt-10 shadow-2xl">
+        <div class="container mx-auto text-center max-w-4xl">
+            <h3 class="text-2xl font-bold mb-4 border-b border-gray-700 pb-2 text-indigo-400">Projeto de Extensão</h3>
+            <p class="text-base mb-4 text-gray-300">
+                Este site é o resultado de um <strong>Projeto de Extensão Universitária</strong> em Finanças Pessoais, desenvolvido pelo estudante <strong>João Paulo Ribeiro Brasil</strong> da <strong>UFRJ / FACC</strong>, sob a orientação do Prof. <strong>Luiz Antônio Ochsendorf Lealm</strong>.
+            </p>
+            <p class="text-sm mb-6 text-gray-400">
+                A pesquisa de diagnóstico foi realizada entre <strong>31/10/2025</strong> e <strong>15/10/2025</strong> com <strong>50</strong> participantes.
+            </p>
+            <div class="bg-yellow-800/20 p-4 rounded-lg mt-6 border border-yellow-700">
+                <p class="text-sm text-yellow-300 font-bold flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    Atenção para o Download:
+                </p>
+                <p class="mt-1 text-sm text-gray-400">Para que o download da planilha funcione no seu projeto do GitHub, você precisa criar uma pasta chamada **`files`** na raiz do projeto e colocar o arquivo **`Orçamento pessoal mensal.xlsx`** dentro dela.</p>
+            </div>
+            <p class="mt-8 text-xs text-gray-500">
+                © <strong>2025</strong> - Todos os Direitos Reservados à UFRJ.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const apiKey = ""; 
+        const apiUrlBase = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent";
+
+        function formatCurrency(value) {
+            return new Intl.NumberFormat('pt-BR', {
+                style: 'currency',
+                currency: 'BRL',
+            }).format(value);
+        }
+
+        function calcularJurosCompostos() {
+            // Coletar valores dos inputs
+            const P = parseFloat(document.getElementById('valorInicial').value) || 0;
+            const PMT = parseFloat(document.getElementById('contribuicaoMensal').value) || 0;
+            const r_anual = parseFloat(document.getElementById('taxaJuros').value) || 0;
+            const n_anos = parseInt(document.getElementById('periodoAnos').value) || 0;
+            
+            const resultadoDiv = document.getElementById('resultadoCalculadora');
+
+            // Validação básica
+            if (n_anos <= 0 || r_anual < 0) {
+                resultadoDiv.innerHTML = "Por favor, insira um período válido (maior que zero) e uma taxa de juros não-negativa.";
+                resultadoDiv.classList.remove('hidden', 'bg-cyan-100', 'text-cyan-900');
+                resultadoDiv.classList.add('bg-rose-100', 'text-rose-900'); // Cor de erro mantida em Rose para contraste máximo
+                return;
+            }
+
+            // Converter taxa anual para taxa mensal decimal
+            const i = (r_anual / 100) / 12; 
+            // Converter período em anos para total de meses
+            const t = n_anos * 12; 
+
+            let FV = 0;
+            let totalInvestido = P + (PMT * t);
+            
+            // Fórmula do Juros Composto com Aportes Mensais
+            if (i > 0) {
+                // Valor Futuro do Principal (P)
+                const fv_principal = P * Math.pow((1 + i), t);
+                
+                // Valor Futuro dos Aportes Mensais (PMT)
+                const fv_aportes = PMT * ((Math.pow((1 + i), t) - 1) / i) * (1 + i);
+                
+                FV = fv_principal + fv_aportes;
+            } else {
+                // Se a taxa for 0, é apenas a soma do investido.
+                FV = totalInvestido;
+            }
+
+            const jurosAcumulados = FV - totalInvestido;
+
+            const resultadoHTML = `
+                <p class="text-lg mb-1">Em <strong>${n_anos} anos</strong> você teria:</p>
+                <p class="text-4xl font-extrabold text-cyan-700">${formatCurrency(FV)}</p>
+                <div class="mt-3 text-sm font-normal border-t border-cyan-300 pt-2">
+                    <p>Total Investido (Aportes + Inicial): <strong>${formatCurrency(totalInvestido)}</strong></p>
+                    <p>Juros Acumulados: <strong>${formatCurrency(jurosAcumulados)}</strong></p>
+                </div>
+            `;
+
+            resultadoDiv.innerHTML = resultadoHTML;
+            resultadoDiv.classList.remove('hidden', 'bg-rose-100');
+            resultadoDiv.classList.add('bg-cyan-100', 'text-cyan-900'); // Cor de sucesso: Cyan
+        }
+
+        async function assistenteDeOrcamento() {
+            const prompt = document.getElementById('promptOrcamento').value;
+            const loadingDiv = document.getElementById('loadingOrcamento');
+            const resultadoDiv = document.getElementById('resultadoOrcamento');
+
+            if (!prompt) {
+                resultadoDiv.className = 'mt-3 p-4 bg-rose-100 border border-rose-200 rounded-lg text-rose-900';
+                resultadoDiv.innerHTML = "Por favor, digite uma categoria ou meta para receber as dicas.";
+                resultadoDiv.classList.remove('hidden');
+                return;
+            }
+
+            loadingDiv.classList.remove('hidden');
+            resultadoDiv.classList.add('hidden');
+
+            const systemPrompt = "Você é um assistente de finanças pessoais da UFRJ. Seu objetivo é fornecer dicas práticas, realistas e específicas para o contexto brasileiro. Responda sempre em português. Crie uma lista com 3 dicas de economia para o prompt do usuário. Use emojis para ilustrar. Use Markdown (títulos, listas).";
+            const userQuery = `Gere 3 dicas de economia para a seguinte categoria/meta: "${prompt}".`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                },
+            };
+
+            let attempts = 0;
+            const maxAttempts = 5;
+            let delay = 1000;
+
+            while (attempts < maxAttempts) {
+                try {
+                    const response = await fetch(`${apiUrlBase}?key=${apiKey}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (response.status === 429) {
+                        // Rate limit handling (exponential backoff)
+                        if (attempts < maxAttempts - 1) {
+                            await new Promise(resolve => setTimeout(resolve, delay));
+                            delay *= 2;
+                            attempts++;
+                            continue;
+                        }
+                    }
+
+                    const result = await response.json();
+                    loadingDiv.classList.add('hidden');
+
+                    const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                    if (text) {
+                        // Use basic formatting for the Markdown response
+                        resultadoDiv.className = 'mt-3 p-4 bg-indigo-50 border border-indigo-200 rounded-lg text-indigo-900';
+                        resultadoDiv.innerHTML = `<h5 class="font-bold text-lg mb-2">✅ Dicas Geradas:</h5><div class="space-y-2">${text.replace(/\n/g, '<br>')}</div>`;
+                    } else {
+                        resultadoDiv.className = 'mt-3 p-4 bg-rose-100 border border-rose-200 rounded-lg text-rose-900';
+                        resultadoDiv.innerHTML = "Erro ao gerar as dicas. Tente novamente mais tarde.";
+                    }
+
+                    resultadoDiv.classList.remove('hidden');
+                    return;
+
+                } catch (error) {
+                    loadingDiv.classList.add('hidden');
+                    resultadoDiv.className = 'mt-3 p-4 bg-rose-100 border border-rose-200 rounded-lg text-rose-900';
+                    resultadoDiv.innerHTML = `Erro de conexão: ${error.message}`;
+                    resultadoDiv.classList.remove('hidden');
+                    return;
+                }
+            }
+            loadingDiv.classList.add('hidden');
+            resultadoDiv.className = 'mt-3 p-4 bg-rose-100 border border-rose-200 rounded-lg text-rose-900';
+            resultadoDiv.innerHTML = "Atingido o limite de tentativas. O serviço Gemini não está respondendo no momento.";
+            resultadoDiv.classList.remove('hidden');
+        }
+
+
+        // Script para garantir a rolagem suave ao clicar nos links da navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+
+</body>
+</html>
